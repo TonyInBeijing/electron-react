@@ -1,5 +1,5 @@
 // 引入electron并创建一个Browserwindow
-const { app, BrowserWindow, ipcMain } = require('electron');
+const { app, BrowserWindow } = require('electron');
 const path = require("path");
 // 保持window对象的全局引用,避免JavaScript对象被垃圾回收时,窗口被自动关闭.
 let mainWindow
@@ -28,10 +28,10 @@ function createWindow() {
     require("@electron/remote/main").enable(mainWindow.webContents)
 
     // 开发
-    mainWindow.loadURL("http://localhost:3000/");
+    // mainWindow.loadURL("http://localhost:3000/");
 
     // 发布
-    // mainWindow.loadURL(path.join("file://", __dirname, "./build/index.html"));
+    mainWindow.loadURL(path.join("file://", __dirname, "./build/index.html"));
 
     // 关闭window时触发下列事件.
     mainWindow.on('closed', function () {
