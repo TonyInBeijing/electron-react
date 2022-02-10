@@ -10,6 +10,7 @@
     "email": "tony@xxx.com"
   },
   "dependencies": {
+    "@electron/remote": "^2.0.1",
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
     "@testing-library/user-event": "^13.5.0",
@@ -46,7 +47,7 @@
     ]
   },
   "devDependencies": {
-    "@electron/remote": "^2.0.1",
+    "@electron/remote": "^2.0.4",
     "electron": "^14.1.1"
   },
   "build": {
