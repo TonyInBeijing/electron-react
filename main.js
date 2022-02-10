@@ -28,10 +28,10 @@ function createWindow() {
     require("@electron/remote/main").enable(mainWindow.webContents)
 
     // 开发
-    // mainWindow.loadURL("http://localhost:3000/");
+    mainWindow.loadURL("http://localhost:3000/");
 
     // 发布
-    mainWindow.loadURL(path.join("file://", __dirname, "./build/index.html"));
+    // mainWindow.loadURL(path.join("file://", __dirname, "./build/index.html"));
 
     // 关闭window时触发下列事件.
     mainWindow.on('closed', function () {
