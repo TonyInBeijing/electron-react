@@ -1,7 +1,7 @@
 import logo from './logo.svg';
 import './App.css';
 
-import Router from './routers/Router';; // 引入路由配置文件
+import Router from './routers/Router'; // 引入路由配置文件
 
 function App() {
   return (
